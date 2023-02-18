@@ -68,7 +68,7 @@ public class Menu extends Cliente {
                 case 1:
                     System.out.println("Escogio Registrar Producto");
                     System.out.println("Ingrese el nombre del producto: ");
-                    producto.nombreProducto = input.nextLine();
+                    producto.nombreProducto = input.next();
                     System.out.println("Ingrese el Costo del Producto: ");
                     producto.costo = input.nextDouble();
                     System.out.println("Ingrese el Precio de Venta: ");
