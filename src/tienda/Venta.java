@@ -93,12 +93,17 @@ public class Venta extends Producto {
     
     
     
-    public int registrarVenta(int cantidadInventario, int precioVenta){
-        System.out.println("Ingrese la Cantidad  Vender: ");
-        int cantVender = input.nextInt();
-        int inventario = cantidadInventario - cantVender;
-        this.saldo = cantVender * precioVenta;
+    public int registrarVenta(double cantidad, double precioVenta){
+        this.saldo = (int)cantidad * (int)precioVenta;
         return saldo;
+    }
+
+    public int actualizarInventario(double cantidadInventario){
+
+        
+        double inventario = cantidadInventario - cantVender;
+
+
     }
     
     public double cobrarVenta(int saldoNuevo){

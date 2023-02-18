@@ -80,7 +80,11 @@ public class Menu extends Cliente {
                     break;
                 case 2:
                     System.out.println("Escogio Registrar Venta");
-                    this.saldo = venta.registrarVenta(10,14990);
+                    System.out.println("Ingrese la Cantidad a Vender: ");
+                    producto.cantidad = input.nextInt();
+                    System.out.println("Ingrese Precio de Venta: ");
+                    producto.precioVenta = input.nextInt();
+                    this.saldo = venta.registrarVenta(producto.cantidad,producto.precioVenta);
                     break;
                 case 3: 
                     System.out.println("Escogio Consultar Saldo CxC");
